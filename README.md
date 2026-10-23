@@ -20,7 +20,7 @@ From left to right:
 
 ### Claude Code status
 
-Each local Claude Code session gets its own entry named after the first words of its first prompt.
+Each local Claude Code session gets its own entry. It shows the session title (the one Claude Code generates, or whatever you set with `/rename`). Until a title exists it falls back to the first words of the first prompt.
 
 | shown | meaning |
 | --- | --- |
