@@ -1,0 +1,212 @@
+[
+  {
+    "type": "escape",
+    "width": 64,
+    "align": "left"
+  },
+  {
+    "type": "brightnessDown",
+    "width": 32,
+    "bordered": false,
+    "align": "left"
+  },
+  {
+    "type": "brightnessUp",
+    "width": 32,
+    "bordered": false,
+    "align": "left"
+  },
+  {
+    "type": "volumeDown",
+    "width": 32,
+    "bordered": false,
+    "align": "left"
+  },
+  {
+    "type": "volumeUp",
+    "width": 32,
+    "bordered": false,
+    "align": "left"
+  },
+  {
+    "type": "mute",
+    "width": 36,
+    "bordered": false,
+    "align": "left"
+  },
+  {
+    "type": "shellScriptTitledButton",
+    "align": "left",
+    "refreshInterval": 60,
+    "width": 32,
+    "bordered": false,
+    "image": {
+      "filePath": "__HOME__/.config/mtmr/moon.png"
+    },
+    "source": {
+      "filePath": "__HOME__/.config/mtmr/nightshift-status.sh"
+    },
+    "actions": [
+      {
+        "trigger": "singleTap",
+        "action": "shellScript",
+        "executablePath": "/bin/bash",
+        "shellArguments": [
+          "-c",
+          "__HOME__/.config/mtmr/nightshift toggle"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "shellScriptTitledButton",
+    "align": "left",
+    "refreshInterval": 60,
+    "width": 32,
+    "bordered": false,
+    "image": {
+      "filePath": "__HOME__/.config/mtmr/icon-shot.png"
+    },
+    "source": {
+      "filePath": "__HOME__/.config/mtmr/nightshift-status.sh"
+    },
+    "actions": [
+      {
+        "trigger": "singleTap",
+        "action": "shellScript",
+        "executablePath": "/bin/bash",
+        "shellArguments": [
+          "-c",
+          "/usr/sbin/screencapture -c"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "shellScriptTitledButton",
+    "align": "left",
+    "refreshInterval": 60,
+    "width": 32,
+    "bordered": false,
+    "image": {
+      "filePath": "__HOME__/.config/mtmr/icon-lock.png"
+    },
+    "source": {
+      "filePath": "__HOME__/.config/mtmr/nightshift-status.sh"
+    },
+    "actions": [
+      {
+        "trigger": "singleTap",
+        "action": "shellScript",
+        "executablePath": "/usr/bin/osascript",
+        "shellArguments": [
+          "-e",
+          "tell application \"System Events\" to keystroke \"q\" using {control down, command down}"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "shellScriptTitledButton",
+    "align": "left",
+    "refreshInterval": 1,
+    "image": {
+      "filePath": "__HOME__/.config/mtmr/claude.png"
+    },
+    "source": {
+      "filePath": "__HOME__/.config/mtmr/claude-status.sh"
+    },
+    "action": "shellScript",
+    "executablePath": "/bin/bash",
+    "shellArguments": [
+      "-c",
+      "find $HOME/.config/mtmr/sessions -type f -delete"
+    ]
+  },
+  {
+    "type": "shellScriptTitledButton",
+    "align": "center",
+    "refreshInterval": 2,
+    "image": {
+      "filePath": "__HOME__/.config/mtmr/icon-sp.png"
+    },
+    "source": {
+      "filePath": "__HOME__/.config/mtmr/sp-status.sh"
+    },
+    "actions": [
+      {
+        "trigger": "singleTap",
+        "action": "shellScript",
+        "executablePath": "/usr/bin/osascript",
+        "shellArguments": [
+          "-e",
+          "tell application \"Spotify\" to playpause"
+        ]
+      },
+      {
+        "trigger": "doubleTap",
+        "action": "shellScript",
+        "executablePath": "/usr/bin/osascript",
+        "shellArguments": [
+          "-e",
+          "tell application \"Spotify\" to next track"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "shellScriptTitledButton",
+    "align": "center",
+    "refreshInterval": 2,
+    "image": {
+      "filePath": "__HOME__/.config/mtmr/icon-yt.png"
+    },
+    "source": {
+      "filePath": "__HOME__/.config/mtmr/yt-status.sh"
+    },
+    "actions": [
+      {
+        "trigger": "singleTap",
+        "action": "shellScript",
+        "executablePath": "/bin/bash",
+        "shellArguments": [
+          "__HOME__/.config/mtmr/yt-toggle.sh"
+        ]
+      },
+      {
+        "trigger": "doubleTap",
+        "action": "shellScript",
+        "executablePath": "/bin/bash",
+        "shellArguments": [
+          "__HOME__/.config/mtmr/yt-next.sh"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "play",
+    "align": "right",
+    "width": 38
+  },
+  {
+    "type": "shellScriptTitledButton",
+    "align": "right",
+    "refreshInterval": 5,
+    "bordered": false,
+    "width": 125,
+    "source": {
+      "filePath": "__HOME__/.config/mtmr/stats.sh"
+    }
+  },
+  {
+    "type": "battery",
+    "align": "right",
+    "bordered": false
+  },
+  {
+    "type": "timeButton",
+    "formatTemplate": "HH:mm",
+    "align": "right",
+    "bordered": false
+  }
+]
