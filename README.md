@@ -29,7 +29,7 @@ Each local Claude Code session gets its own entry. It shows the session title (t
 | `name ✓3` | finished, 3 answers so far |
 | `Idle` | no sessions |
 
-Tap the widget to clear everything. The states come from Claude Code hooks, so this only works for local Claude Code sessions, not for the chat tab or cloud sessions.
+Tap the widget once to bring the Claude app to the front (it opens on whatever you looked at last; Claude has no link format for jumping to a specific Code session). Double tap it to clear everything and go back to `Idle`. The states come from Claude Code hooks, so this only works for local Claude Code sessions, not for the chat tab or cloud sessions.
 
 One session finished, the other still working:
 

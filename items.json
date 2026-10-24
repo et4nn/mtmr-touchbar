@@ -116,11 +116,25 @@
     "source": {
       "filePath": "__HOME__/.config/mtmr/claude-status.sh"
     },
-    "action": "shellScript",
-    "executablePath": "/bin/bash",
-    "shellArguments": [
-      "-c",
-      "find $HOME/.config/mtmr/sessions -type f -delete"
+    "actions": [
+      {
+        "trigger": "singleTap",
+        "action": "shellScript",
+        "executablePath": "/usr/bin/open",
+        "shellArguments": [
+          "-a",
+          "Claude"
+        ]
+      },
+      {
+        "trigger": "doubleTap",
+        "action": "shellScript",
+        "executablePath": "/bin/bash",
+        "shellArguments": [
+          "-c",
+          "find $HOME/.config/mtmr/sessions -type f -delete"
+        ]
+      }
     ]
   },
   {
