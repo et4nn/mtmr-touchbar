@@ -1,6 +1,6 @@
 # mtmr-touchbar
 
-My Touch Bar setup for a 2017 MacBook Pro 15" (A1707) running macOS Ventura. It uses [MTMR](https://github.com/Toxblh/MTMR) to replace the stock Touch Bar with the things I actually press, plus a couple of status widgets.
+My Touch Bar setup for a  MacBook Pro 15". It uses [MTMR](https://github.com/Toxblh/MTMR) to replace the stock Touch Bar with the things I actually press, plus a couple of status widgets.
 
 ![touch bar](docs/touchbar.jpg)
 
